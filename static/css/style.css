@@ -1,0 +1,75 @@
+html {
+  font-size: 20px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+#h1a {
+  margin: auto;
+  padding: 20px 0;    
+  color: rgba(0, 32, 76, 0.65);
+  text-shadow: 3px 3px 1px rgba(121, 92, 45, 0.55);
+  text-align: left;
+}
+
+#h1m {
+    margin: auto;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgba(59, 157, 29, 0.98);
+    text-align: center;
+
+}
+
+#h2m {
+    margin: auto;
+    padding: 20px 0;
+    color: rgb(0, 0, 0);
+    text-shadow: 3px 3px 1px rgba(59, 157, 29, 0.98);
+    text-align: center;
+}
+
+#ta {
+    color: #795a00;
+    width: 20%;
+  font-size: 16px;    
+  line-height: 2;
+  letter-spacing: 1px;
+  text-align: left;
+  padding: 120px 10px 0px 20px;
+}
+
+#contm {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: rgba(48, 0, 255, 0); /* Цвет фона */
+
+    text-align: center;
+    width: 100%; /* Ширина слоя */
+
+
+
+}
+
+
+/*
+#p3 {
+	text-align: center;
+}
+
+#kit {
+	width: 480px;
+	height: 360px;
+	border: 1px solid black;
+	display: block;
+	margin: 0 auto;
+	
+}
+body {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #FF7F50;
+  padding: 0px 10px 20px 20px;
+  border: 5px solid black;
+}
+*/
