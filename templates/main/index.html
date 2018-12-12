@@ -1,1 +1,30 @@
 
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link rel="stylesheet" href=" /static/css/style.css" type="text/css">
+</head>
+<body>
+<h1 id="h1m"> Это главная страница </h1>
+<h2 id="h2m">Данная страница выполнена в стиле минимализм.!</h2>
+<style>
+    html { height: 100%; }
+    body { background: url(/static/img/main.png) no-repeat;
+         background-size: cover;
+  }
+</style>
+
+<ul id="contm">
+    <li>
+        <a style="color:rgba(59, 157, 29, 0.98)" href="/">Главная </a>
+        <a style="color:rgba(59, 157, 29, 0.98)" href="/contacts/">Контакты </a>
+        <a style="color:rgba(59, 157, 29, 0.98)" href="/about/"> О проекте </a>
+
+    </li>
+</ul>
+</body>
+</html>
