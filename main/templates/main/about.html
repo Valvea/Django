@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About page</title>
-    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
-    <link href="/static/css/style.css" rel="stylesheet" type="text/css">
-</head>
-<body>
+{% extends 'master.html' %}
+{% block page_title %}
+О проекте
+{% endblock %}
+{% block page_content %}
 <style>
     html { height: 100%; }
     body { background: url(/static/img/back.png) no-repeat;
@@ -17,6 +13,7 @@
 <p id="ta">Здесь, далее будет вестись разработка веб-приложения на платформе джанго.
     Надеюсь все получится.
 </p>
-
-</body>
-</html>
+    <p id="ab">
+        {{ text }}
+    </p>
+{% endblock %}

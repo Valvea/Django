@@ -1,0 +1,15 @@
+{% extends 'master.html' %}
+
+{% block page_title %}
+Products list page
+{% endblock %}
+
+{% block page_content %}
+<ul>
+    {% for itm in products %}
+    <li>
+        {{ itm }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
