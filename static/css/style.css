@@ -29,13 +29,14 @@ html {
 }
 
 #ta {
-    color: #795a00;
-    width: 20%;
+
+  color: #795a00;
+  width: 20%;
   font-size: 16px;    
   line-height: 2;
   letter-spacing: 1px;
   text-align: left;
-  padding: 120px 10px 0px 20px;
+
 }
 
 #contm {
@@ -65,6 +66,13 @@ html {
 #ab {
 
     color: #007963;
+}
+
+
+.audio embed{
+
+    height: 234px;
+    width: 500px;
 }
 
 /*
