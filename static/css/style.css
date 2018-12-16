@@ -29,8 +29,9 @@ html {
 }
 
 #ta {
-
-  color: #795a00;
+    position: absolute; /* Фиксированное положение */
+  left: 40px; bottom: 120px; /* Левый нижний угол */
+  color: #007957;
   width: 20%;
   font-size: 16px;    
   line-height: 2;
@@ -70,11 +71,56 @@ html {
 
 
 .audio embed{
-
     height: 234px;
     width: 500px;
 }
 
+
+
+
+#p3{
+
+  color: #007957;
+
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 1px;
+    text-align: left;
+    margin-left: auto;
+    padding: 30px 70px 60px 0px;
+}
+#h3k
+{
+    text-align: left;
+ padding: 60px 0px 0px 0px;
+
+}
+
+#p4{
+   /* Фиксированное положение */
+  color: #007957;
+    padding: 30px 70px 60px 0px;
+     /* Фиксированное положение */
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+
+
+}
+
+#hk {
+    text-align: center;
+}
+
+.rightpic {
+    float: right; /* Выравнивание по правому краю */
+    margin: 0px 0px 10px 10px; /* Отступы вокруг фотографии */
+   }
+
+.leftpic {
+    float: left; /* Выравнивание по правому краю */
+    margin: 0px 50px 10px 50px; /* Отступы вокруг фотографии */
+   }
 /*
 #p3 {
 	text-align: center;
