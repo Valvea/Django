@@ -2,18 +2,22 @@
 {% load static %}
 {% block page_title %}
 Главная страница
+
 {% endblock %}
 
 {% block page_content %}
+
+
 <h1 id="h1m"> Это главная страница </h1>
 <h2 id="h2m">Данная страница выполнена в стиле минимализм.!</h2>
 <div class="audio">
 <embed src="/static/audio/main.mp3"></embed>
 </div>
-
+<div id="openweathermap-widget-12"></div>
+<script>window.myWidgetParam ? window.myWidgetParam : window.myWidgetParam = [];  window.myWidgetParam.push({id: 12,cityid: '524901',appid: '86e2bc0b2caf8a9c933c75044312c5d4',units: 'metric',containerid: 'openweathermap-widget-12',  });  (function() {var script = document.createElement('script');script.async = true;script.charset = "utf-8";script.src = "//openweathermap.org/themes/openweathermap/assets/vendor/owm/js/weather-widget-generator.js";var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(script, s);  })();</script>
 <style>
     html { height: 100%; }
-    body { background: url(/static/img/main.png) no-repeat;
+    body { background: url(/static/img/main.jpg) no-repeat;
          background-size: cover;
   }
 </style>
