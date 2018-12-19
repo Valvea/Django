@@ -8,7 +8,7 @@ Products list page
 <ul>
     {% for itm in products %}
     <li>
-     <a href="/products/{{forloop.counter0}}">{{ itm }}</a>
+     <a href="{% url 'products:detail' pk=itm.id %}">{{ itm.name }}</a>
     </li>
     {% endfor %}
 </ul>

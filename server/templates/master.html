@@ -18,10 +18,10 @@
         {% block page_content %}{% endblock %}
         <ul id="contm">
     <li>
-        <a style="color:rgba(59, 157, 29, 0.98)" href="/">Главная </a>
-        <a style="color:rgba(59, 157, 29, 0.98)" href="/contacts/">Контакты </a>
-        <a style="color:rgba(59, 157, 29, 0.98)" href="/about/"> О проекте </a>
-        <a style="color:rgba(59, 157, 29, 0.98)" href="/products/"> Продукты </a>
+        <a style="color:rgba(59, 157, 29, 0.98)" href="{% url 'main:index' %}">Главная </a>
+        <a style="color:rgba(59, 157, 29, 0.98)" href="{% url 'main:contacts' %}">Контакты </a>
+        <a style="color:rgba(59, 157, 29, 0.98)" href="{% url 'main:about' %}"> О проекте </a>
+        <a style="color:rgba(59, 157, 29, 0.98)" href="{% url 'products:index' %}"> Продукты </a>
 
 
     </li>
