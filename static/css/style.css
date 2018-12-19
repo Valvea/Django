@@ -1,14 +1,14 @@
 html {
-  font-size: 20px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
-  font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту  */
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 #h1a {
-  margin: auto;
-  padding: 20px 0;    
-  color: rgba(0, 32, 76, 0.65);
-  text-shadow: 3px 3px 1px rgba(0, 121, 76, 0.55);
-  text-align: left;
+    margin: auto;
+    padding: 20px 0;
+    color: rgba(0, 32, 76, 0.65);
+    text-shadow: 3px 3px 1px rgba(0, 121, 76, 0.55);
+    text-align: left;
 }
 
 #h1m {
@@ -30,19 +30,21 @@ html {
 
 #ta {
     position: absolute; /* Фиксированное положение */
-  left: 40px; bottom: 120px; /* Левый нижний угол */
-  color: #007957;
-  width: 20%;
-  font-size: 16px;    
-  line-height: 2;
-  letter-spacing: 1px;
-  text-align: left;
+    left: 40px;
+    bottom: 120px; /* Левый нижний угол */
+    color: #007957;
+    width: 20%;
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+    text-align: left;
 
 }
 
 #contm {
     position: fixed; /* Фиксированное положение */
-    left: 0; bottom: 0; /* Левый нижний угол */
+    left: 0;
+    bottom: 0; /* Левый нижний угол */
     padding: 10px; /* Поля вокруг текста */
     background: rgba(55, 255, 204, 0.72); /* Цвет фона */
     text-align: center;
@@ -50,15 +52,16 @@ html {
 
 }
 
-
 .list li {
     list-style-type: none; /* Прячем исходные маркеры */
 }
+
 .list li:before {
     color: #20a01d; /* Цвет маркера */
     content: "№ "; /* Сам маркер */
     padding-right: 10px; /* Расстояние от маркера до текста */
-   }
+}
+
 #u {
 
     color: rgb(239, 144, 0);
@@ -69,42 +72,44 @@ html {
     color: #007963;
 }
 
+#banan {
+    width: 400px;
+    height: 300px;
 
-.audio embed{
-    height: 30px;
-    width: 100px;
 }
 
+#banans {
 
+    width: 700px;
+    height: 500px;
+}
 
+#p3 {
 
-#p3{
+    color: #007957;
 
-  color: #007957;
-
-  font-size: 20px;
-  line-height: 2;
-  letter-spacing: 1px;
+    font-size: 20px;
+    line-height: 2;
+    letter-spacing: 1px;
     text-align: left;
     margin-left: auto;
     padding: 30px 70px 60px 0px;
 }
-#h3k
-{
+
+#h3k {
     text-align: left;
- padding: 60px 0px 0px 0px;
+    padding: 60px 0px 0px 0px;
 
 }
 
-#p4{
-   /* Фиксированное положение */
-  color: #007957;
+#p4 {
+    /* Фиксированное положение */
+    color: #007957;
     padding: 30px 70px 60px 0px;
-     /* Фиксированное положение */
-  font-size: 16px;
-  line-height: 2;
-  letter-spacing: 1px;
-
+    /* Фиксированное положение */
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
 
 }
 
@@ -115,23 +120,20 @@ html {
 .rightpic {
     float: right; /* Выравнивание по правому краю */
     margin: 0px 0px 10px 10px; /* Отступы вокруг фотографии */
-   }
+}
 
 .leftpic {
     float: left; /* Выравнивание по правому краю */
     margin: 0px 50px 10px 50px; /* Отступы вокруг фотографии */
-   }
+}
 
-#openweathermap-widget-12  {
-
+#openweathermap-widget-12 {
 
     position: fixed; /* Фиксированное положение */
     right: 10px; /* Расстояние от правого края окна браузера */
     top: 20%; /* Расстояние сверху */
 
-
 }
-
 
 /*
 #p3 {
