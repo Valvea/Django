@@ -11,11 +11,7 @@ class Category(models.Model):
         blank=True,
     )
 
-    short_description = models.TextField(
-        null=True,
-        blank=True,
 
-    )
 
     modified = models.DateTimeField(
         auto_now=True,
