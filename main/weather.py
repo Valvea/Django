@@ -1,10 +1,6 @@
 import json
-import os
 import urllib.request
-import pickle
-import re
-import datetime
-import copy
+
 
 class Weather:
     appid = "&appid=86e2bc0b2caf8a9c933c75044312c5d4"
@@ -25,7 +21,7 @@ class Weather:
 
 
     def get_weather(self):
-        self.get_wiew_of_weather()
+        self.create_wiew_of_weather()
         return self.list_of_weathers
 
     def get_reqst(self):
@@ -35,7 +31,7 @@ class Weather:
 
     def refresh_weather(self):
         self.get_reqst()
-        self.get_wiew_of_weather()
+
 
     def __write_keys__(self):
         it = 0
@@ -63,7 +59,7 @@ class Weather:
         else:
             return False
 
-    def get_wiew_of_weather(self):
+    def create_wiew_of_weather (self):
         self.__write_keys__()
         index = 0
         for i in self.list_of_weathers:
