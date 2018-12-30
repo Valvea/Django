@@ -3,8 +3,11 @@ from django.template.loader import get_template, render_to_string
 from django.shortcuts import render
 from django.http import HttpResponse
 from main.weather import Weather
+from main.forms import TimeForm
+
+
 obj=Weather()
-obj.get_wiew_of_weather()
+obj.create_wiew_of_weather()
 
 #def state_(self):
  #   """ Return the text of the state rather than an integer """
@@ -50,9 +53,8 @@ def contacts_view(request):
         'main/contacts.html',
         {
             'contacts': [
-                '8900007500',
-                '8900007501',
-                '8900007502',
+                'Почта : taytds10@gmail.com',
+
             ]
         }
     )
@@ -69,22 +71,27 @@ def about_view(request):
 
 
 def weather_view(request):
+    form = TimeForm(request.GET or None)
+    if form.is_valid():
+        from_= form.cleaned_data['from_']
+        to_= form.cleaned_data['to_']
+        obj.change_time(from_,to_)
+        obj.create_wiew_of_weather()
+    if 'refresh' in request.GET:
+        obj.refresh_weather()
 
-    time_from=request.GET.get('from', None)
-    time_to = request.GET.get('to', None)
-    if time_to or time_from:
-        #temp_str=str.split(temp_str," ")
-        obj.change_time(time_from,time_to)
-        obj.get_weather()
     else:
         pass
+
     return render(
         request,
         'main/weather.html',
         {
-            'погода': obj.list_of_weathers
+            'погода': obj.list_of_weathers,
+
+            'form':form,
+
         },
 
     )
-
 
