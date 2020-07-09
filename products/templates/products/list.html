@@ -1,0 +1,15 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block page_title %}
+Products list page
+{% endblock %}
+
+{% block page_content %}
+<ul>
+    {% for itm in products %}
+    <li>
+     <a href="{% url 'products:detail' pk=itm.id %}">{{ itm.name }}</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block page_title %}
+О проекте
+{% endblock %}
+{% block page_content %}
+<style>
+    html { height: 100%; }
+    body { background: url(/static/img/back.png) no-repeat;
+         background-size: cover;
+  }
+</style>
+<h1 id="h1a" >Проект джанго</h1>
+<p id="ta">Здесь, далее будет вестись разработка веб-приложения на платформе джанго.
+    Надеюсь все получится.Настраиваю гит.
+</p>
+    <p id="ab">
+        {{ text }}
+    </p>
+{% endblock %}

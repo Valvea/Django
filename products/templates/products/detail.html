@@ -1,0 +1,35 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block page_title %}
+    Продукты
+{% endblock %}
+
+{% block page_content %}
+
+    {% if object %}
+        {% if object.name == "kiwi" %}
+            <h1 id="hk">Киви</h1>
+
+            <p id="p3"><img id="kiwi" src="{% static 'img/kiwi.jpg' %}" alt="Киви" class="leftpic">{{object.short_description}}</p>
+            <h3 id="h3k">История селекции киви</h3>
+
+
+            <p id="p4"><img id="kiwi-a" src="/static/img/adler.jpg" alt="Киви в адлере" width="700" height="500"
+                            class="rightpic">{{ object.description }} </p>
+
+
+        {% endif %}
+
+        {% if object.name == "banana" %}
+            <h1 id="hk">Банан</h1>
+            <p id="p3"><img id="banan" src="{% static 'img/banan_v.jpg' %}" alt="Банан во въетнаме"
+                            class="leftpic">{{ object.short_description }}</p>
+            <h3 id="h3k">Применение </h3>
+            <p id="p4"><img id="banans" src="{% static 'img/banans.JPG' %}" alt="Киви в адлере"
+                            class="rightpic">{{ object.description }}</p>
+        {% endif %}
+    {% else %}
+        Product does not exists
+    {% endif %}
+
+{% endblock %}
